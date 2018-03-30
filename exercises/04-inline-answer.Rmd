@@ -64,7 +64,7 @@ ggplot(weekday, aes(x = origin)) +
   ylab("Mean delay (m)") +
   xlab("")
 ```
-
+<!--There may be something wrong below the code-->
 As the plot above shows, `r c("EWR" = "Newark", "JFK" = "JFK", "LGA" = "LaGuardia")[[weekday$origin[which.min(weekday$mean_delay)]]]` Airport had the shortest mean departure delay on `r dow`, with a mean delay of `r round(min(weekday$mean_delay), 2)` minutes.
 
 The complete results are in the table below.
